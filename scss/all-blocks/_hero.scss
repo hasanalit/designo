@@ -1,0 +1,90 @@
+.hero {
+    padding: 0px 20px;
+    &__container {
+        padding: 145px 476px 145px 95px;
+        background-image: url(../images/Oval.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    &__heading {
+        margin: 0px 0px 11px;
+        width: 540px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        margin: 0px 0px 40px;
+        width: 445px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .hero {
+        padding: 0px 20px;
+        &__container {
+            max-width: 100%;
+            padding: 45px 58px 472px;
+        }
+
+        &__section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__heading {
+            margin: 0px 0px 8px;
+            text-align: center;
+        }
+
+        &__desc {
+            margin: 0px 0px 19px;
+            text-align: center;
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width: 520px) {
+    .hero {
+        padding: 0px 20px;
+        &__container {
+            max-width: 100%;
+            padding: 80px 24px 451px;
+        }
+
+        &__section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__heading {
+            margin: 0px 0px 14px;
+            width: 327px;
+            font-size: 32px;
+            line-height: 36px;
+            text-align: center;
+        }
+
+        &__desc {
+            margin: 0px 0px 24px;
+            width: 327px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+    }
+}
