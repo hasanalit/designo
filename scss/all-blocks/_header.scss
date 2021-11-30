@@ -1,0 +1,97 @@
+.header {
+    padding: 64px 0px;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        flex-shrink: 0;
+    }
+
+    &__logo:hover {
+        opacity: 0.8;
+    }
+
+    &__logo:active {
+        opacity: 0.6;
+    }
+
+    &__logo-img {
+        display: inline-block;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item + &__item {
+        margin-left: 42px;
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        color: #333136;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        opacity: 0.8;
+    }
+
+    &__link:active {
+        opacity: 0.6;
+    }
+
+    &__hamburger {
+        display: none;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../images/bars-solid.svg);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    .header {
+        position: relative;
+        padding: 34px 0px;
+
+        &__list {
+            display: none;
+        }
+
+        &__hamburger {
+            display: inline-block;
+        }
+    }
+
+    .header--open .header__list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        background-color: dodgerblue;
+    }
+
+    .header--open .header__link {
+        color: #fff;
+    }
+
+    .header--open .header__hamburger {
+        background-image: url(../images/times-solid.svg);
+    }
+}
