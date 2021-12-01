@@ -1,0 +1,130 @@
+.design {
+    padding: 80px 20px 0px;
+    &__container {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+    }
+    &__left {
+        width: 50%;
+        height: 640px;
+        background-image: url(../images/design_back.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+    }
+
+    &__center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 24px;
+        white-space: nowrap;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        margin: 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__right {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+
+    }
+
+    &__top {
+        position: relative;
+        text-align: center;
+        margin-bottom: 24px;
+        width: 100%;
+        height: 308px;
+        background-image: url(../images/top.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    &__bottom {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 308px;
+        background-image: url(../images/bottom.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .design {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 649px;
+        }
+
+        &__left {
+            background-image: url(../../images/left_back.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 33%;
+        }
+
+
+        &__right {
+            width: 100%;
+            height: 67%;
+        }
+
+        &__top {
+            width: 100%;
+            height: 50%;
+        }
+
+        &__bottom {
+            width: 100%;
+            height: 50%;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .design {
+        &__heading {
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 1.4px;
+        }
+
+        &__desc {
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+    }
+}

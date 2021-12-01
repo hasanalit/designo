@@ -553,6 +553,139 @@ img {
   }
 }
 
+.design {
+  padding: 80px 20px 0px;
+}
+
+.design__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.design__left {
+  width: 50%;
+  height: 640px;
+  background-image: url(../images/design_back.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.design__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.design__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.design__desc {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.design__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.design__top {
+  position: relative;
+  text-align: center;
+  margin-bottom: 24px;
+  width: 100%;
+  height: 308px;
+  background-image: url(../images/top.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.design__bottom {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 308px;
+  background-image: url(../images/bottom.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .design__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 649px;
+  }
+  .design__left {
+    background-image: url(../../images/left_back.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 33%;
+  }
+  .design__right {
+    width: 100%;
+    height: 67%;
+  }
+  .design__top {
+    width: 100%;
+    height: 50%;
+  }
+  .design__bottom {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .design__heading {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+  }
+  .design__desc {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}
+
 .main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -560,7 +693,7 @@ img {
 }
 
 .hero {
-  padding: 0px 20px;
+  padding: 0px 20px 80px;
 }
 
 .hero__container {
