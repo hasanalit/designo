@@ -1,0 +1,69 @@
+.project {
+    margin-bottom: -50px;
+    padding: 80px 20px 0px;
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url(../images/project__img.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        width: 100%;
+        height: 292px;
+    }
+
+    &__heading {
+        width: 268px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        margin: 0;
+        width: 459px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .project {
+        &__container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__button {
+
+            position: relative;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project {
+
+        &__container {
+            height: 379px;
+        }
+        &__heading {
+            width: 279px;
+            font-size: 32px;
+            line-height: 36px;
+            text-align: center;
+        }
+
+        &__desc {
+            width: 279px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+}
