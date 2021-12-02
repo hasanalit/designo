@@ -1,14 +1,20 @@
 .hero {
     padding: 0px 20px 80px;
     &__container {
-        padding: 145px 476px 145px 95px;
-        background-image: url(../images/Oval.png);
-        background-repeat: no-repeat;
+        width: 100%;
+        height: 640px;
+        background-image: url(../images/hero_back_img.png);
         background-size: cover;
         background-position: center;
         border-radius: 10px;
+        overflow: hidden;
     }
 
+    &__section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     &__heading {
         margin: 0px 0px 11px;
         width: 540px;
@@ -30,17 +36,17 @@
 @media only screen and (max-width: 1070px) {
     .hero {
         padding: 0px 20px;
-        &__container {
-            max-width: 100%;
-            padding: 45px 58px 472px;
-        }
 
         &__section {
             display: flex;
             align-items: center;
             flex-direction: column;
+            margin: 0 auto;
         }
 
+        &__img {
+            height: 100%;
+        }
         &__heading {
             margin: 0px 0px 8px;
             text-align: center;
@@ -60,15 +66,27 @@
     .hero {
         padding: 0px 20px;
         &__container {
-            max-width: 100%;
-            padding: 80px 24px 451px;
+            position: relative;
         }
+
 
         &__section {
             display: flex;
             align-items: center;
             flex-direction: column;
+            margin: 0 auto;
         }
+
+        // &__text {
+
+        // }
+
+        // &__img {
+        //     position: relative;
+        //     top: 100%;
+        //     bottom: 0%;
+        //     transform: translate(-100, -50%,);
+        // }
 
         &__heading {
             margin: 0px 0px 14px;
