@@ -1,0 +1,32 @@
+.work {
+    padding: 80px 20px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item + &__item {
+        margin-left: 30px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .work {
+        &__list {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
